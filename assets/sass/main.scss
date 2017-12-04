@@ -1,0 +1,94 @@
+/* 
+==============================================
+CONTENT:	Project Name Here
+AUTHOR:		Your Name Here
+==============================================
+
+TABLE OF CONTENTS:
+
+1. Main Layout
+2. Content
+
+==============================================
+*/
+
+
+
+/* 1. Main Layout ================================= */
+
+* {
+	box-sizing: border-box;
+}
+
+
+body {
+	background: #ccc;
+	font-family: sans-serif;
+}
+
+.container {
+	width: 90%;
+	margin: 5vh auto;
+	background-color: white;
+	min-height: 90vh;
+	padding: 5vw;
+}
+
+h1 {
+	font-size: 3em;
+	text-align: center;
+	font-weight: 900;
+}
+
+ul.filters {
+	padding: 2px 0;
+	font-style: italic;
+	color: #aaa;
+	li {
+		display: inline-block;
+		padding: 5px 8px;
+		border: 1px solid transparent;		
+		border-radius: 4px;
+		cursor: pointer;
+		font-style: normal;
+		color: black;
+		transition: 0.3s;
+	
+		&:hover {
+			border: 1px solid #aaa;
+		}
+		&.active {
+			border: 1px solid #333;
+		}
+	}
+}
+
+ul.products {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	
+	
+	li {
+		flex-basis: 31%;
+		// flex-grow: 1;
+		padding: 1vw 0;
+		transition: 0.3s;
+		opacity: 1;
+
+		&.hidden {
+			opacity: 0.3;
+		}
+
+		img {
+			width: 100%;
+		}
+
+		h3 {
+			font-size: 1.7em;
+			font-weight: 200;
+			font-style: italic;
+			font-family: serif;
+		}
+	}
+}
